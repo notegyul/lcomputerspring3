@@ -19,12 +19,14 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.0'
 	//implementation 'org.springframework.session:spring-session-jdbc'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	//runtimeOnly 'com.mysql:mysql-connector-j'
-	// https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client
-	implementation 'org.mariadb.jdbc:mariadb-java-client:3.1.2'
+	implementation 'org.springframework.security:spring-security-taglibs'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	//implementation 'org.mariadb.jdbc:mariadb-java-client:3.1.2'
 	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test' //jsp연동
+	testImplementation 'org.springframework.security:spring-security-test' 
+	
+	//jsp연동
 	implementation('org.apache.tomcat.embed:tomcat-embed-jasper')
 	implementation('javax.servlet:jstl:1.2')
 }

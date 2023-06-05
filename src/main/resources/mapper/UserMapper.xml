@@ -16,7 +16,7 @@
 							u_name						as uName,
 							u_isAccountNonExpired		as isAccountNonExpired,
 							u_isAccountNonLocked		as isAccountNonLocked,
-							u_isCredentialNonExpired 	as isCredentialNonExpired,
+							u_isCredentialNonExpired 	as isCredentialsNonExpired,
 							u_isEnabled					as isEnabled
 							
 		FROM			lc_user

@@ -2,6 +2,8 @@ package com.lcomputerspring3.example.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.authority.AuthorityUtils;
@@ -17,6 +19,9 @@ import com.lcomputerspring3.example.service.UserService;
 @org.springframework.stereotype.Controller
 public class Controller {
 	
+	
+	
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	@Autowired UserService userservice;
 	@Autowired BoardService boardservice;
 	
@@ -25,6 +30,9 @@ public class Controller {
 		
 		List<Board> list = boardservice.selectBoardList();
 		model.addAttribute("list",list);
+		//logger.debug("debug");
+		//logger.info("info");
+		//logger.error("error");
 		return "/index";
 	}
 	

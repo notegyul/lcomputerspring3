@@ -1,0 +1,8 @@
+10:51:37.220 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on L1 with PID 9640 (C:\Users\L1A\Documents\work12\lcomputerspring3\bin\main started by L1A in C:\Users\L1A\Documents\work12\lcomputerspring3) 
+10:51:37.220 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+10:51:37.221 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+10:51:37.611 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.408 seconds (JVM running for 389.293) 
+11:08:43.491 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on L1 with PID 9640 (C:\Users\L1A\Documents\work12\lcomputerspring3\bin\main started by L1A in C:\Users\L1A\Documents\work12\lcomputerspring3) 
+11:08:43.491 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:08:43.492 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:08:43.893 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.422 seconds (JVM running for 1415.576) 

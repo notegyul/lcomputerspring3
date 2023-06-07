@@ -1,0 +1,80 @@
+08:44:36.934 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 68247 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+08:44:36.935 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+08:44:36.935 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+08:44:38.110 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 1.394 seconds (JVM running for 1.79) 
+08:44:56.094 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:44:56.108 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:44:56.119 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:44:56.119 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:44:56.120 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:45:12.787 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.createUser : ==>  Preparing: INSERT INTO lc_user ( u_id, u_password, u_name, u_isAccountNonExpired, u_isAccountNonLocked, u_isCredentialNonExpired, u_isEnabled ) VALUES ( ?, ?, ?, ?, ?, ?, ? ) 
+08:45:12.788 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.createUser : ==> Parameters: open(String), $2a$10$Hy5l1NG4V8K8VIohAZgz/urJtNL37j6PA8Ga1GcilYFDG4L/gpIPW(String), 박책(String), true(Boolean), true(Boolean), true(Boolean), true(Boolean) 
+08:45:12.794 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.createUser : <==    Updates: 1 
+08:45:12.802 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.createAuthority : ==>  Preparing: INSERT INTO lc_auth ( u_id, u_auth ) values (?, ?) ON DUPLICATE KEY UPDATE u_id = ? 
+08:45:12.806 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.createAuthority : ==> Parameters: open(String), ROLE_USER(String), open(String) 
+08:45:12.809 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.createAuthority : <==    Updates: 1 
+08:45:22.358 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+08:45:22.359 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : ==> Parameters: open(String) 
+08:45:22.360 TRACE --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+08:45:22.360 TRACE --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : <==        Row: open, $2a$10$Hy5l1NG4V8K8VIohAZgz/urJtNL37j6PA8Ga1GcilYFDG4L/gpIPW, 박책, 1, 1, 1, 1 
+08:45:22.360 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+08:45:22.360 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+08:45:22.360 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: open(String) 
+08:45:22.361 TRACE --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+08:45:22.361 TRACE --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+08:45:22.361 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+08:45:22.455 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:45:22.455 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:45:22.456 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:45:22.456 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:45:22.456 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:45:40.962 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:45:40.963 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:45:40.969 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:45:40.970 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:45:40.971 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:45:43.161 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:45:43.162 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:45:43.173 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:45:43.173 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:45:43.177 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:45:57.115 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:45:57.115 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:45:57.117 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:45:57.117 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:45:57.118 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:46:07.873 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+08:46:07.874 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==> Parameters: open(String) 
+08:46:07.878 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+08:46:07.878 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==        Row: open, $2a$10$Hy5l1NG4V8K8VIohAZgz/urJtNL37j6PA8Ga1GcilYFDG4L/gpIPW, 박책, 1, 1, 1, 1 
+08:46:07.880 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+08:46:07.881 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+08:46:07.881 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: open(String) 
+08:46:07.884 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+08:46:07.884 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+08:46:07.884 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+08:46:07.997 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:46:07.997 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:46:07.998 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:46:07.998 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:46:07.998 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:46:51.007 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:46:51.008 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:46:51.011 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:46:51.012 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:46:51.013 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:46:52.780 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter FROM lc_board 
+08:46:52.785 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+08:46:52.788 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter 
+08:46:52.788 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 1, dd, dddd, null 
+08:46:52.789 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 1 
+08:47:06.881 WARN  --- [RMI TCP Connection(6)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 

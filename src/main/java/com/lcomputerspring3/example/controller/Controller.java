@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,10 +21,11 @@ import com.lcomputerspring3.example.service.UserService;
 public class Controller {
 	
 	
-	
+	//로그 https://velog.io/@backtony/Spring-%EB%A1%9C%EA%B7%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-Logback
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	@Autowired UserService userservice;
 	@Autowired BoardService boardservice;
+	@Autowired PasswordEncoder encoder;
 	
 	@RequestMapping("/")
 	public String home(Model model) {
@@ -45,7 +47,7 @@ public class Controller {
 	public String signup(User user) {
 		
 		//비밀번호 암호화 
-		String encodedPassword = new BCryptPasswordEncoder().encode(user.getPassword());
+		String encodedPassword = encoder.encode(user.getPassword());
 		
 		//유저 데이터 세팅
 		user.setPassword(encodedPassword);

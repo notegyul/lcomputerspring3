@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lcomputerspring3.example.mapper.BoardMapper">
-	<select id="selectBoardList" resultType="Board">
+	<select id="selectBoardList" resultType="Board" parameterType="Board">
 		SELECT		b_id as bId,
 						b_title as bTitle,
 						b_content as bContent,
 						b_writer as bWriter
 		FROM		lc_board
 	</select>
+	<!-- 글 등록 -->
+	<insert id="writePost" parameterType="Board">
+		INSERT	INTO lc_board(
+				b_title,
+					b_content,
+					b_writer,
+					b_datetime,
+					u_id
+		) VALUES (
+				#{bTitle},
+				#{bContent},
+				#{bWriter},
+				now(),
+				#{username}
+		)
+					
+	</insert>
+	
+	<!-- 게시글 읽기 -->
+	<select id="getBoard" resultType="Board" parameterType="int">
+	
+	</select>
+	
+	<!-- 게시글 수정 -->
+	<update id="editBoard">
+	
+	</update>
+	
+	<!-- 게시글 삭제 -->
+	<update id="deleteBoard">
+	
+	</update>
 </mapper>

@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h1>게시글 등록 완료</h1>
+	<a href="/boardList">글 목록 보러 가기</a>
 </body>
 </html>

@@ -1,0 +1,785 @@
+00:30:11.567 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+00:30:11.570 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==> Parameters: ap(String) 
+00:30:11.572 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+00:30:11.572 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==        Row: ap, $2a$10$9xqv2R3qs3QLX/r.LynCdutoNyLFh8uYSRfL6vX2LjdJ9YUnoiy1S, 김해피, 1, 1, 1, 1 
+00:30:11.572 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+00:30:11.572 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+00:30:11.572 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: ap(String) 
+00:30:11.573 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+00:30:11.573 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+00:30:11.573 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+00:30:11.675 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:30:11.675 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:30:11.676 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:30:11.676 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.676 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.676 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.677 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.678 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.679 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:30:11.680 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:30:11.680 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:30:31.753 WARN  --- [Thread-5] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+00:30:31.831 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 75295 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+00:30:31.831 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+00:30:31.831 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+00:30:32.206 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.417 seconds (JVM running for 2422.853) 
+00:30:38.409 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:30:38.409 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:30:38.411 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:30:38.411 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.412 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.412 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.412 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.412 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.412 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.412 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.412 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.413 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.413 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.413 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.413 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.413 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.413 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.413 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.414 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.415 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.415 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.415 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.415 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.416 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:30:38.417 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:30:38.418 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:30:38.418 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:30:38.418 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:30:38.418 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:30:38.418 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:31:25.148 WARN  --- [Thread-7] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+00:31:25.206 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 75295 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+00:31:25.207 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+00:31:25.207 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+00:31:25.538 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.346 seconds (JVM running for 2476.186) 
+00:32:51.901 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 75295 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+00:32:51.901 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+00:32:51.901 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+00:32:52.210 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.322 seconds (JVM running for 2562.857) 
+00:33:05.668 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 75868 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+00:33:05.668 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+00:33:05.669 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+00:33:06.808 WARN  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server 
+00:33:06.825 WARN  --- [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use 
+00:33:06.845 ERROR --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+ 
+00:33:19.021 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 75870 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+00:33:19.021 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+00:33:19.021 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+00:33:20.196 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 1.388 seconds (JVM running for 1.76) 
+00:33:28.314 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+00:33:28.328 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.UserMapper.readUser : ==> Parameters: ap(String) 
+00:33:28.341 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+00:33:28.341 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.UserMapper.readUser : <==        Row: ap, $2a$10$9xqv2R3qs3QLX/r.LynCdutoNyLFh8uYSRfL6vX2LjdJ9YUnoiy1S, 김해피, 1, 1, 1, 1 
+00:33:28.343 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+00:33:28.346 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+00:33:28.346 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: ap(String) 
+00:33:28.347 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+00:33:28.347 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+00:33:28.347 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+00:33:28.443 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:33:28.443 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:33:28.444 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:33:28.445 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.446 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.446 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.447 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.447 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.447 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.448 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.448 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.448 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.449 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.449 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.450 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.450 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.450 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.450 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.451 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.452 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.453 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.453 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.453 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.454 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.454 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.454 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.455 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.456 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.456 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.456 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.456 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.457 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.457 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.457 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.457 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.458 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.458 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.458 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.458 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:33:28.458 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:33:28.459 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:33:28.459 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:33:28.459 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:33:28.459 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:33:28.459 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:33:28.459 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:33:28.460 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:39:22.189 WARN  --- [Thread-5] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+00:39:22.263 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 75870 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+00:39:22.263 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+00:39:22.263 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+00:39:22.650 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.422 seconds (JVM running for 364.213) 
+00:39:32.335 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:39:32.336 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:39:32.338 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:39:32.339 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.339 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.339 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.340 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.340 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.340 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.341 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.341 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.341 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.342 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.342 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.342 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.342 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.343 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.343 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.344 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.346 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.347 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.347 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.347 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.348 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.348 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.348 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.348 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.349 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.349 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.349 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.349 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.349 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.350 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.350 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.350 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.350 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.350 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.350 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.351 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:39:32.351 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:39:32.351 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:39:32.351 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:39:32.351 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:39:32.352 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:39:32.352 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:39:32.352 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:39:32.352 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:47:28.844 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:47:28.845 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:47:28.852 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:47:28.853 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.853 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.854 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.854 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.854 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.854 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.855 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.855 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.855 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.856 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.856 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.856 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.858 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.858 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.859 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.859 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.859 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.859 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.860 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.860 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.860 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.860 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.860 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.861 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.861 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.861 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.862 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.862 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.862 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.862 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.863 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.863 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.863 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.864 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.864 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.867 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:47:28.867 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:47:28.867 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:47:28.867 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:47:28.868 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:47:28.868 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:47:28.868 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:47:28.868 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:47:28.868 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:53:58.994 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:53:58.995 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:53:59.007 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:53:59.007 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.007 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.008 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.008 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.008 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.008 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.008 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.008 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.008 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.009 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.010 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.010 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.010 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.010 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.010 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.013 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.014 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.014 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.014 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.014 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.014 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.014 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:53:59.015 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:53:59.016 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:53:59.016 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:53:59.016 TRACE --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:53:59.016 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:54:54.593 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:54:54.600 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:54:54.606 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:54:54.607 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.608 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.608 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.608 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.608 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.608 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.608 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.617 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.618 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.618 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.618 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.618 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.618 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.618 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.618 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.619 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.620 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:54:54.621 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:54:54.621 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:56:02.755 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:56:02.757 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:56:02.762 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:56:02.763 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.764 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.764 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.765 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.765 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.765 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.765 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.765 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.766 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.766 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.766 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.766 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.766 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.766 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.767 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.768 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.769 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.770 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:02.771 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:02.772 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:02.772 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:02.772 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:56:02.772 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:56:02.772 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:56:02.772 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 43 
+00:56:32.735 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+00:56:32.735 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.UserMapper.readUser : ==> Parameters: ap(String) 
+00:56:32.736 TRACE --- [http-nio-8080-exec-3] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+00:56:32.737 TRACE --- [http-nio-8080-exec-3] c.l.e.mapper.UserMapper.readUser : <==        Row: ap, $2a$10$9xqv2R3qs3QLX/r.LynCdutoNyLFh8uYSRfL6vX2LjdJ9YUnoiy1S, 김해피, 1, 1, 1, 1 
+00:56:32.737 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+00:56:32.738 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.writePost : ==>  Preparing: INSERT INTO lc_board( b_title, b_content, b_writer, b_datetime ) VALUES ( ?, ?, ?, now() ) 
+00:56:32.739 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.writePost : ==> Parameters: null, null, 김해피(String) 
+00:56:32.745 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.writePost : <==    Updates: 1 
+00:56:32.745 INFO  --- [http-nio-8080-exec-3] c.l.e.controller.BoardController : 게시글 등록 성공! 
+00:56:55.432 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:56:55.433 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:56:55.436 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:56:55.437 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.437 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.438 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.438 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.438 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.438 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.438 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.438 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.439 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.446 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.447 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.447 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.447 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.447 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.448 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:55.449 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:55.450 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:55.450 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:55.450 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:55.450 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:56:55.450 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:56:55.450 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:56:55.450 TRACE --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 65, null, null, 김해피, 2023-06-13 00:56:32 
+00:56:55.450 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 44 
+00:56:56.765 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+00:56:56.767 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : ==> Parameters: ap(String) 
+00:56:56.770 TRACE --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+00:56:56.771 TRACE --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : <==        Row: ap, $2a$10$9xqv2R3qs3QLX/r.LynCdutoNyLFh8uYSRfL6vX2LjdJ9YUnoiy1S, 김해피, 1, 1, 1, 1 
+00:56:56.771 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+00:56:56.772 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.writePost : ==>  Preparing: INSERT INTO lc_board( b_title, b_content, b_writer, b_datetime ) VALUES ( ?, ?, ?, now() ) 
+00:56:56.773 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.writePost : ==> Parameters: null, null, 김해피(String) 
+00:56:56.782 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.writePost : <==    Updates: 1 
+00:56:56.782 INFO  --- [http-nio-8080-exec-5] c.l.e.controller.BoardController : 게시글 등록 성공! 
+00:56:57.747 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:56:57.748 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:56:57.752 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:56:57.752 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.753 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.754 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.761 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.762 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.762 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.762 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.763 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.764 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.764 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.764 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.764 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.764 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.764 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 65, null, null, 김해피, 2023-06-13 00:56:32 
+00:56:57.765 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 66, null, null, 김해피, 2023-06-13 00:56:56 
+00:56:57.766 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 45 
+00:56:58.525 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+00:56:58.527 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : ==> Parameters: ap(String) 
+00:56:58.528 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+00:56:58.529 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : <==        Row: ap, $2a$10$9xqv2R3qs3QLX/r.LynCdutoNyLFh8uYSRfL6vX2LjdJ9YUnoiy1S, 김해피, 1, 1, 1, 1 
+00:56:58.530 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+00:56:58.530 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.writePost : ==>  Preparing: INSERT INTO lc_board( b_title, b_content, b_writer, b_datetime ) VALUES ( ?, ?, ?, now() ) 
+00:56:58.531 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.writePost : ==> Parameters: null, null, 김해피(String) 
+00:56:58.536 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.writePost : <==    Updates: 1 
+00:56:58.537 INFO  --- [http-nio-8080-exec-7] c.l.e.controller.BoardController : 게시글 등록 성공! 
+00:57:01.681 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:57:01.681 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:57:01.685 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:57:01.686 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.686 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.686 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.687 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.687 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.687 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.687 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.688 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.689 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.689 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.689 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.690 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.690 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.690 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.690 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.690 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.690 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.691 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.691 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.691 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.691 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.691 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.691 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.692 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.692 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.692 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.692 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.692 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.692 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.693 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.693 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.693 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.693 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.693 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.693 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.694 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:01.694 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:01.694 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:01.694 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:01.694 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:01.694 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:57:01.695 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:57:01.695 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:57:01.695 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 65, null, null, 김해피, 2023-06-13 00:56:32 
+00:57:01.695 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 66, null, null, 김해피, 2023-06-13 00:56:56 
+00:57:01.695 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 67, null, null, 김해피, 2023-06-13 00:56:58 
+00:57:01.695 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 46 
+00:57:35.088 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+00:57:35.089 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : ==> Parameters: ap(String) 
+00:57:35.095 TRACE --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+00:57:35.095 TRACE --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : <==        Row: ap, $2a$10$9xqv2R3qs3QLX/r.LynCdutoNyLFh8uYSRfL6vX2LjdJ9YUnoiy1S, 김해피, 1, 1, 1, 1 
+00:57:35.096 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+00:57:35.097 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.writePost : ==>  Preparing: INSERT INTO lc_board( b_title, b_content, b_writer, b_datetime ) VALUES ( ?, ?, ?, now() ) 
+00:57:35.097 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.writePost : ==> Parameters: where is the titles?(String), where are they(String), 김해피(String) 
+00:57:35.101 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.writePost : <==    Updates: 1 
+00:57:35.101 INFO  --- [http-nio-8080-exec-1] c.l.e.controller.BoardController : 게시글 등록 성공! 
+00:57:36.362 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:57:36.364 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:57:36.376 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:57:36.377 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.378 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.379 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:57:36.380 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 65, null, null, 김해피, 2023-06-13 00:56:32 
+00:57:36.381 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 66, null, null, 김해피, 2023-06-13 00:56:56 
+00:57:36.381 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 67, null, null, 김해피, 2023-06-13 00:56:58 
+00:57:36.381 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 68, where is the titles?, where are they, 김해피, 2023-06-13 00:57:35 
+00:57:36.381 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 47 
+00:58:17.813 WARN  --- [Thread-7] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+00:58:17.877 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 75870 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+00:58:17.877 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+00:58:17.877 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+00:58:18.228 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.378 seconds (JVM running for 1499.803) 
+00:58:27.825 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+00:58:27.826 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : ==> Parameters: ap(String) 
+00:58:27.827 TRACE --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+00:58:27.827 TRACE --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : <==        Row: ap, $2a$10$9xqv2R3qs3QLX/r.LynCdutoNyLFh8uYSRfL6vX2LjdJ9YUnoiy1S, 김해피, 1, 1, 1, 1 
+00:58:27.828 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+00:58:27.828 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.writePost : ==>  Preparing: INSERT INTO lc_board( b_title, b_content, b_writer, b_datetime ) VALUES ( ?, ?, ?, now() ) 
+00:58:27.829 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.writePost : ==> Parameters: null, null, 김해피(String) 
+00:58:27.831 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.writePost : <==    Updates: 1 
+00:58:27.831 INFO  --- [http-nio-8080-exec-1] c.l.e.controller.BoardController : 게시글 등록 성공! 
+00:58:29.474 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime FROM lc_board 
+00:58:29.475 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters:  
+00:58:29.487 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime 
+00:58:29.487 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 4, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.488 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 5, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.488 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 6, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.488 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 7, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.488 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 8, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.488 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 9, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.488 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 10, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.489 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 11, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.489 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 12, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.489 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 13, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.489 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 16, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.489 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 17, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.489 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 18, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.489 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 19, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.490 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 20, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.491 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 21, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.491 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 22, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 23, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 24, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 25, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 31, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 32, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 33, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 34, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 35, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 36, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 37, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 38, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 39, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 40, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 41, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 42, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.492 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 43, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 44, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 45, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 46, first, 몇 번째 first?, null, 2023-06-12 14:52:52 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 47, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 48, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 49, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 50, logger test, gogo, 김해피, 2023-06-12 22:09:20 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 62, paging, paging can do this, 김해피, 2023-06-12 22:09:20 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 63, ????, 왜 62번임, null, null 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 64, bList test, test, 김해피, 2023-06-12 23:50:34 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 65, null, null, 김해피, 2023-06-13 00:56:32 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 66, null, null, 김해피, 2023-06-13 00:56:56 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 67, null, null, 김해피, 2023-06-13 00:56:58 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 68, where is the titles?, where are they, 김해피, 2023-06-13 00:57:35 
+00:58:29.493 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 69, null, null, 김해피, 2023-06-13 00:58:27 
+00:58:29.493 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 48 
+00:58:29.493 INFO  --- [http-nio-8080-exec-2] c.l.e.controller.BoardController : list 불러오기 성공! 
+00:59:43.141 WARN  --- [RMI TCP Connection(31)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 

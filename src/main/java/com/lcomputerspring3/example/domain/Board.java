@@ -9,14 +9,14 @@ public class Board {
 	private String bContent;
 	private String bWriter;
 	private String bDateTime;
-	private String username;
+	private String uName;
 	
-	
-	public String getUsername() {
-		return username;
+		
+	public String getuName() {
+		return uName;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setuName(String uName) {
+		this.uName = uName;
 	}
 	public int getbId() {
 		return bId;

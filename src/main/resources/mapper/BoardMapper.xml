@@ -5,7 +5,8 @@
 		SELECT		b_id as bId,
 						b_title as bTitle,
 						b_content as bContent,
-						b_writer as bWriter
+						b_writer as bWriter,
+						b_datetime as bDateTime
 		FROM		lc_board
 	</select>
 	<!-- 글 등록 -->
@@ -14,14 +15,13 @@
 				b_title,
 					b_content,
 					b_writer,
-					b_datetime,
-					u_id
+					b_datetime
+					
 		) VALUES (
 				#{bTitle},
 				#{bContent},
-				#{bWriter},
-				now(),
-				#{username}
+				#{uName},
+				now()
 		)
 					
 	</insert>

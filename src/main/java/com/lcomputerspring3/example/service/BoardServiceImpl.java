@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lcomputerspring3.example.domain.Board;
+import com.lcomputerspring3.example.domain.Pagination;
 import com.lcomputerspring3.example.mapper.BoardMapper;
 
 @Service("BoardServiceImpl")
@@ -16,6 +17,16 @@ public class BoardServiceImpl implements BoardService{
 	@Override
 	public List<Board> selectBoardList(){
 		return boardmapper.selectBoardList();
+	}
+	
+	@Override
+	public List<Board> selectBoardListWithPage(Pagination pagination){
+		return boardmapper.selectBoardListWithPage(pagination);
+	}
+	
+	@Override
+	public int boardCountAll() {
+		return boardmapper.boardCountAll();
 	}
 	
 	@Override

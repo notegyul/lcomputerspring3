@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,7 +65,7 @@
 			
 			<c:forEach items="${list}" var="bList" varStatus="status">
 				<tr>
-					<td>${status.count}</td>
+					<td>${fn:length(list) - status.index}</td>
 					<td><a href="#">${bList.bTitle}</a></td>
 					<td>${bList.bWriter}</td>
 					<td>${bList.bDateTime}</td>

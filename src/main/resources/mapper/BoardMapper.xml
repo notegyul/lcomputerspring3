@@ -8,7 +8,26 @@
 						b_writer as bWriter,
 						b_datetime as bDateTime
 		FROM		lc_board
+		ORDER BY	b_datetime DESC
 	</select>
+	<!-- 페이징 처리 리스트 -->
+	<select id="selectBoardListWithPage" resultType="Board" parameterType="Pagination">
+		SELECT		b_id as bId,
+						b_title as bTitle,
+						b_content as bContent,
+						b_writer as bWriter,
+						b_datetime as bDateTime
+		FROM		lc_board
+		ORDER BY	b_datetime DESC
+		LIMIT		#{pageNum},#{perPage}
+	</select>
+	
+	<!-- 게시글 count -->
+	<select id="boardCountAll" resultType="int">
+		SELECT		count(*)
+		FROM 		lc_board
+	</select>
+	
 	<!-- 글 등록 -->
 	<insert id="writePost" parameterType="Board">
 		INSERT	INTO lc_board(

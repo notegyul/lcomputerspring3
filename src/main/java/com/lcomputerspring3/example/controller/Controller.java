@@ -7,12 +7,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.lcomputerspring3.example.domain.Board;
+import com.lcomputerspring3.example.domain.Pagination;
 import com.lcomputerspring3.example.domain.User;
 import com.lcomputerspring3.example.service.BoardService;
 import com.lcomputerspring3.example.service.UserService;
@@ -26,6 +26,7 @@ public class Controller {
 	@Autowired UserService userservice;
 	@Autowired BoardService boardservice;
 	@Autowired PasswordEncoder encoder;
+	@Autowired Pagination pagination;
 	
 	@RequestMapping("/")
 	public String home(Model model) {

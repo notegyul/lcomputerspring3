@@ -1,0 +1,790 @@
+11:42:38.495 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:42:38.496 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:42:38.496 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:42:39.676 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 1.396 seconds (JVM running for 1.793) 
+11:42:43.939 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+11:42:43.953 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+11:42:43.965 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+11:42:43.966 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+11:42:43.967 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+11:42:43.967 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+11:42:43.968 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+11:42:43.968 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+11:42:43.969 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+11:42:43.969 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+11:42:43.969 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+11:42:43.970 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+11:42:43.970 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+11:42:43.970 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:42:43.971 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:42:43.971 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:42:43.972 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:42:43.972 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:42:43.973 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:42:43.974 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:42:43.974 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:42:43.974 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:42:43.975 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 209, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:42:43.975 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+11:42:49.342 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:42:49.343 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==> Parameters: app(String) 
+11:42:49.344 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:42:49.344 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==        Row: app, $2a$10$2O1y7NJJ7VLu6rNSnfIsvO5dWxK47yYBPjtXA.aEhrGRxEHl/9TIO, 김왈, 1, 1, 1, 1 
+11:42:49.345 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+11:42:49.345 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:42:49.345 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:42:49.346 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:42:49.346 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:42:49.347 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:42:49.347 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:42:49.440 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+11:42:49.440 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+11:42:49.441 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+11:42:49.442 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+11:42:49.442 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+11:42:49.442 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+11:42:49.442 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+11:42:49.443 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+11:42:49.443 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+11:42:49.443 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+11:42:49.443 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+11:42:49.444 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+11:42:49.444 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+11:42:49.444 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:42:49.445 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:42:49.445 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:42:49.445 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:42:49.445 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:42:49.445 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:42:49.446 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:42:49.446 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:42:49.446 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:42:49.446 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 209, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:42:49.447 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+11:43:12.394 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+11:43:12.394 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : ==> Parameters: app(String) 
+11:43:12.397 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+11:43:12.397 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : <==        Row: app, $2a$10$2O1y7NJJ7VLu6rNSnfIsvO5dWxK47yYBPjtXA.aEhrGRxEHl/9TIO, 김왈, 1, 1, 1, 1 
+11:43:12.397 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+11:43:12.398 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.writePost : ==>  Preparing: INSERT INTO lc_board( b_title, b_content, b_writer, b_datetime, u_id, b_group, b_order, b_depth ) VALUES ( ?, ?, ?, now(), ?, 1, 1, 0 ) 
+11:43:12.399 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.writePost : ==> Parameters: 답글 테스트#1(String), 6월 19일 월요일
+마라샹궈 기다리는 중(String), 김왈(String), app(String) 
+11:43:12.403 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.writePost : <==    Updates: 1 
+11:43:12.404 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.B.writePostGroupUpdate : ==>  Preparing: UPDATE lc_board SET b_group = last_insert_id() WHERE b_id = last_insert_id() 
+11:43:12.404 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.B.writePostGroupUpdate : ==> Parameters:  
+11:43:12.405 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.B.writePostGroupUpdate : <==    Updates: 1 
+11:43:12.406 INFO  --- [http-nio-8080-exec-7] c.l.e.controller.BoardController : 게시글 등록 성공! 
+11:43:13.408 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+11:43:13.409 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+11:43:13.422 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+11:43:13.422 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+11:43:13.423 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+11:43:13.423 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+11:43:13.424 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+11:43:13.425 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+11:43:13.426 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+11:43:13.427 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+11:43:13.428 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+11:43:13.428 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+11:43:13.429 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+11:43:13.430 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+11:43:13.430 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+11:43:13.431 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+11:43:13.431 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+11:43:13.431 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+11:43:13.432 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+11:43:13.432 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:43:13.432 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:43:13.433 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:43:13.433 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:43:13.433 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:43:13.433 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:43:13.433 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:43:13.434 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:43:13.434 TRACE --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:43:13.434 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+11:43:13.434 INFO  --- [http-nio-8080-exec-8] c.l.e.controller.BoardController : list 불러오기 성공! 
+11:43:15.911 DEBUG --- [http-nio-8080-exec-9] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:43:15.912 DEBUG --- [http-nio-8080-exec-9] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:43:15.917 TRACE --- [http-nio-8080-exec-9] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:43:15.917 TRACE --- [http-nio-8080-exec-9] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:43:15.918 DEBUG --- [http-nio-8080-exec-9] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:43:15.919 DEBUG --- [http-nio-8080-exec-9] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:43:15.920 DEBUG --- [http-nio-8080-exec-9] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:43:15.923 TRACE --- [http-nio-8080-exec-9] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:43:15.924 TRACE --- [http-nio-8080-exec-9] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:43:15.924 TRACE --- [http-nio-8080-exec-9] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:43:15.924 DEBUG --- [http-nio-8080-exec-9] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:43:15.925 INFO  --- [http-nio-8080-exec-9] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:43:18.943 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+11:43:18.944 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+11:43:18.960 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+11:43:18.960 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+11:43:18.961 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+11:43:18.961 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+11:43:18.962 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+11:43:18.963 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+11:43:18.963 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+11:43:18.964 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+11:43:18.964 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+11:43:18.964 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+11:43:18.964 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+11:43:18.965 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+11:43:18.965 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+11:43:18.965 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+11:43:18.965 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+11:43:18.965 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+11:43:18.965 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+11:43:18.966 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:43:18.966 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:43:18.966 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:43:18.967 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:43:18.967 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:43:18.967 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:43:18.967 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:43:18.967 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:43:18.967 TRACE --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:43:18.968 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+11:43:18.968 INFO  --- [http-nio-8080-exec-10] c.l.e.controller.BoardController : list 불러오기 성공! 
+11:43:57.628 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:43:57.629 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:43:57.631 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:43:57.631 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:43:57.632 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:43:57.633 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:43:57.633 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:43:57.634 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:43:57.634 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:43:57.634 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:43:57.635 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:43:57.635 INFO  --- [http-nio-8080-exec-2] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:44:12.081 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:44:12.085 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:44:12.090 TRACE --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:44:12.093 TRACE --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:44:12.093 DEBUG --- [http-nio-8080-exec-5] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:44:12.096 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:44:12.102 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:44:12.105 TRACE --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:44:12.105 TRACE --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:44:12.105 TRACE --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:44:12.105 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:44:12.106 INFO  --- [http-nio-8080-exec-5] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:46:11.305 WARN  --- [Thread-5] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+11:46:11.372 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:46:11.372 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:46:11.372 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:46:11.711 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.369 seconds (JVM running for 213.828) 
+11:46:15.281 WARN  --- [http-nio-8080-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'bGroup' for method parameter type int is not present] 
+11:47:20.870 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:47:20.870 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:47:20.870 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:47:21.194 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.353 seconds (JVM running for 283.311) 
+11:47:45.921 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:47:45.922 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:47:45.922 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:47:46.228 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.333 seconds (JVM running for 308.346) 
+11:47:49.108 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+11:47:49.108 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+11:47:49.118 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+11:47:49.118 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+11:47:49.119 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+11:47:49.119 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+11:47:49.119 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+11:47:49.120 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+11:47:49.121 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+11:47:49.122 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+11:47:49.122 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+11:47:49.122 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:47:49.122 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:47:49.122 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:47:49.122 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:47:49.122 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:47:49.123 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:47:49.123 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:47:49.123 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:47:49.123 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:47:49.123 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+11:47:49.123 INFO  --- [http-nio-8080-exec-1] c.l.e.controller.BoardController : list 불러오기 성공! 
+11:47:50.538 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:47:50.539 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:47:50.541 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:47:50.542 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:47:50.542 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:47:50.546 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:47:50.547 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:47:50.552 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:47:50.552 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:47:50.552 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:47:50.553 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:47:50.553 INFO  --- [http-nio-8080-exec-2] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:47:54.609 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+11:47:54.609 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+11:47:54.616 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+11:47:54.616 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+11:47:54.616 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+11:47:54.617 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+11:47:54.624 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+11:47:54.626 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+11:47:54.627 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+11:47:54.627 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+11:47:54.627 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+11:47:54.627 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+11:47:54.627 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+11:47:54.627 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:47:54.628 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:47:54.629 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:47:54.629 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:47:54.629 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:47:54.629 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:47:54.629 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:47:54.629 TRACE --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:47:54.629 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+11:47:54.629 INFO  --- [http-nio-8080-exec-3] c.l.e.controller.BoardController : list 불러오기 성공! 
+11:47:56.778 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:47:56.779 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:47:56.782 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:47:56.783 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:47:56.785 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:47:56.786 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:47:56.786 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:47:56.791 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:47:56.791 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:47:56.791 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:47:56.791 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:47:56.792 INFO  --- [http-nio-8080-exec-4] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:48:02.189 DEBUG --- [http-nio-8080-exec-6] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:48:02.190 DEBUG --- [http-nio-8080-exec-6] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:48:02.200 TRACE --- [http-nio-8080-exec-6] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:48:02.200 TRACE --- [http-nio-8080-exec-6] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:48:02.202 DEBUG --- [http-nio-8080-exec-6] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:48:02.203 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:48:02.204 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:48:02.206 TRACE --- [http-nio-8080-exec-6] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:48:02.206 TRACE --- [http-nio-8080-exec-6] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:48:02.206 TRACE --- [http-nio-8080-exec-6] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:48:02.206 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:48:02.207 INFO  --- [http-nio-8080-exec-6] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:48:16.694 DEBUG --- [http-nio-8080-exec-8] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:48:16.695 DEBUG --- [http-nio-8080-exec-8] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:48:16.707 TRACE --- [http-nio-8080-exec-8] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:48:16.707 TRACE --- [http-nio-8080-exec-8] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:48:16.708 DEBUG --- [http-nio-8080-exec-8] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:48:16.708 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:48:16.708 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:48:16.710 TRACE --- [http-nio-8080-exec-8] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:48:16.710 TRACE --- [http-nio-8080-exec-8] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:48:16.710 TRACE --- [http-nio-8080-exec-8] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:48:16.710 DEBUG --- [http-nio-8080-exec-8] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:48:16.710 INFO  --- [http-nio-8080-exec-8] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:48:29.550 DEBUG --- [http-nio-8080-exec-10] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:48:29.551 DEBUG --- [http-nio-8080-exec-10] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:48:29.560 TRACE --- [http-nio-8080-exec-10] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:48:29.562 TRACE --- [http-nio-8080-exec-10] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:48:29.564 DEBUG --- [http-nio-8080-exec-10] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:48:29.566 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:48:29.567 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:48:29.570 TRACE --- [http-nio-8080-exec-10] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:48:29.570 TRACE --- [http-nio-8080-exec-10] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:48:29.570 TRACE --- [http-nio-8080-exec-10] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:48:29.570 DEBUG --- [http-nio-8080-exec-10] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:48:29.570 INFO  --- [http-nio-8080-exec-10] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:49:23.667 WARN  --- [Thread-15] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+11:49:23.728 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:49:23.728 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:49:23.728 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:49:24.033 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.333 seconds (JVM running for 406.151) 
+11:49:57.369 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:49:57.370 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:49:57.372 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:49:57.372 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:49:57.372 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:49:57.374 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:49:57.374 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:49:57.375 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:49:57.375 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:49:57.375 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:49:57.375 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:49:57.376 INFO  --- [http-nio-8080-exec-2] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:50:11.941 WARN  --- [Thread-19] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+11:50:11.992 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:50:11.992 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:50:11.992 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:50:12.318 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.35 seconds (JVM running for 454.435) 
+11:50:13.182 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:50:13.182 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:50:13.186 TRACE --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:50:13.188 TRACE --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:50:13.188 DEBUG --- [http-nio-8080-exec-1] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:50:13.190 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:50:13.190 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:50:13.195 TRACE --- [http-nio-8080-exec-1] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:50:13.195 TRACE --- [http-nio-8080-exec-1] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:50:13.195 TRACE --- [http-nio-8080-exec-1] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:50:13.195 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:50:13.196 INFO  --- [http-nio-8080-exec-1] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:51:12.329 WARN  --- [Thread-23] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-4 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+11:51:12.394 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:51:12.394 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:51:12.394 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:51:12.695 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.33 seconds (JVM running for 514.812) 
+11:51:17.226 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+11:51:17.226 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+11:51:17.240 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+11:51:17.240 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+11:51:17.240 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+11:51:17.240 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+11:51:17.240 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+11:51:17.241 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+11:51:17.241 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+11:51:17.241 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+11:51:17.241 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:51:17.242 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:51:17.243 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+11:51:17.243 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+11:51:17.243 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+11:51:17.243 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+11:51:17.243 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+11:51:17.243 INFO  --- [http-nio-8080-exec-1] c.l.e.controller.BoardController : list 불러오기 성공! 
+11:51:19.301 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+11:51:19.302 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+11:51:19.304 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+11:51:19.304 TRACE --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+11:51:19.313 DEBUG --- [http-nio-8080-exec-2] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+11:51:19.315 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+11:51:19.316 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: app(String) 
+11:51:19.318 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+11:51:19.318 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_ADMIN 
+11:51:19.319 TRACE --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+11:51:19.319 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.UserMapper.readAuthorities : <==      Total: 2 
+11:51:19.320 INFO  --- [http-nio-8080-exec-2] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+11:51:29.248 WARN  --- [Thread-27] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-5 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+11:51:29.309 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:51:29.309 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:51:29.309 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:51:29.617 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.335 seconds (JVM running for 531.734) 
+11:52:01.434 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94065 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+11:52:01.434 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+11:52:01.434 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+11:52:01.734 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.326 seconds (JVM running for 563.851) 
+14:28:54.201 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:28:54.201 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:28:54.201 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:28:55.371 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 1.388 seconds (JVM running for 1.767) 
+14:29:01.153 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+14:29:01.167 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+14:29:01.180 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+14:29:01.181 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+14:29:01.182 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+14:29:01.182 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+14:29:01.183 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+14:29:01.183 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+14:29:01.184 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+14:29:01.184 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+14:29:01.184 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+14:29:01.185 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+14:29:01.185 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+14:29:01.185 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+14:29:01.186 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:01.186 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+14:29:01.186 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+14:29:01.187 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+14:29:01.187 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:01.188 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+14:29:01.189 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+14:29:01.189 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+14:29:01.189 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:01.190 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+14:29:09.866 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==>  Preparing: SELECT u_id as username, u_password as password, u_name as uName, u_isAccountNonExpired as isAccountNonExpired, u_isAccountNonLocked as isAccountNonLocked, u_isCredentialNonExpired as isCredentialsNonExpired, u_isEnabled as isEnabled FROM lc_user WHERE 1=1 AND u_id = ? 
+14:29:09.867 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : ==> Parameters: tommy(String) 
+14:29:09.869 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==    Columns: username, password, uName, isAccountNonExpired, isAccountNonLocked, isCredentialsNonExpired, isEnabled 
+14:29:09.869 TRACE --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==        Row: tommy, $2a$10$52Msk4oO1Q6yhcwJlpcJ1ut/Vcru3IMg4EWNrm4c.Z/.ML7s.mQcC, 박토미, 1, 1, 1, 1 
+14:29:09.870 DEBUG --- [http-nio-8080-exec-4] c.l.e.mapper.UserMapper.readUser : <==      Total: 1 
+14:29:09.871 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+14:29:09.871 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: tommy(String) 
+14:29:09.872 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+14:29:09.872 TRACE --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+14:29:09.872 DEBUG --- [http-nio-8080-exec-4] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+14:29:09.965 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+14:29:09.966 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+14:29:09.967 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+14:29:09.967 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+14:29:09.967 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+14:29:09.968 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+14:29:09.968 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+14:29:09.968 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+14:29:09.969 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+14:29:09.969 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+14:29:09.969 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+14:29:09.969 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+14:29:09.969 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+14:29:09.970 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+14:29:09.970 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:09.970 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+14:29:09.970 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+14:29:09.970 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+14:29:09.971 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:09.971 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+14:29:09.971 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+14:29:09.972 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+14:29:09.972 TRACE --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:09.972 DEBUG --- [http-nio-8080-exec-5] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+14:29:12.483 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+14:29:12.484 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+14:29:12.486 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+14:29:12.486 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+14:29:12.487 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+14:29:12.488 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+14:29:12.489 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+14:29:12.490 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+14:29:12.491 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+14:29:12.492 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+14:29:12.493 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+14:29:12.493 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+14:29:12.494 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+14:29:12.494 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+14:29:12.495 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+14:29:12.495 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+14:29:12.495 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+14:29:12.496 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+14:29:12.496 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+14:29:12.496 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:12.497 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+14:29:12.497 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+14:29:12.498 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+14:29:12.498 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:12.498 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+14:29:12.499 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+14:29:12.499 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+14:29:12.499 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+14:29:12.499 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+14:29:12.500 INFO  --- [http-nio-8080-exec-6] c.l.e.controller.BoardController : list 불러오기 성공! 
+14:29:13.619 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+14:29:13.621 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+14:29:13.624 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+14:29:13.631 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+14:29:13.633 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+14:29:13.633 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+14:29:13.634 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: tommy(String) 
+14:29:13.635 TRACE --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+14:29:13.635 TRACE --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+14:29:13.635 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+14:29:13.635 INFO  --- [http-nio-8080-exec-7] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+14:29:29.315 WARN  --- [http-nio-8080-exec-9] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported] 
+14:32:12.967 WARN  --- [Thread-5] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+14:32:13.035 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:32:13.035 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:32:13.035 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:32:13.382 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.378 seconds (JVM running for 199.775) 
+14:32:25.939 WARN  --- [http-nio-8080-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{bGroup}"] 
+14:55:23.206 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:55:23.207 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:55:23.207 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:55:23.566 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.396 seconds (JVM running for 1590.039) 
+14:55:32.428 WARN  --- [http-nio-8080-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{bGroup}"] 
+14:56:45.903 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:56:45.903 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:56:45.903 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:56:46.220 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.344 seconds (JVM running for 1672.694) 
+14:57:13.978 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:57:13.978 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:57:13.978 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:57:14.295 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.341 seconds (JVM running for 1700.769) 
+14:57:34.980 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:57:34.980 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:57:34.980 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:57:35.291 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.339 seconds (JVM running for 1721.766) 
+14:58:06.075 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:58:06.076 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:58:06.076 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:58:06.387 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.338 seconds (JVM running for 1752.862) 
+14:58:13.935 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:58:13.935 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:58:13.935 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:58:14.245 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.336 seconds (JVM running for 1760.721) 
+14:58:39.960 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:58:39.960 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:58:39.960 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:58:40.283 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.348 seconds (JVM running for 1786.759) 
+14:58:57.939 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:58:57.939 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:58:57.940 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:58:58.253 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.339 seconds (JVM running for 1804.729) 
+14:59:07.805 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+14:59:07.805 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+14:59:07.806 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+14:59:08.108 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.325 seconds (JVM running for 1814.584) 
+15:00:01.108 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+15:00:01.108 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+15:00:01.108 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+15:00:01.411 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.315 seconds (JVM running for 1867.887) 
+15:00:14.985 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+15:00:14.985 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+15:00:14.985 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+15:00:15.292 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.318 seconds (JVM running for 1881.769) 
+15:00:19.793 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+15:00:19.793 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+15:00:19.793 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+15:00:20.104 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.32 seconds (JVM running for 1886.581) 
+15:00:34.708 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 94594 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+15:00:34.708 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+15:00:34.708 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+15:00:35.013 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 0.316 seconds (JVM running for 1901.49) 
+15:00:45.263 WARN  --- [http-nio-8080-exec-3] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{bGroup}"] 
+15:17:45.127 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 95157 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+15:17:45.128 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+15:17:45.128 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+15:17:46.393 WARN  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server 
+15:17:46.410 WARN  --- [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use 
+15:17:46.432 ERROR --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+ 
+15:17:58.293 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+15:17:58.293 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+15:17:58.304 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+15:17:58.304 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+15:17:58.304 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+15:17:58.305 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+15:17:58.305 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+15:17:58.306 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+15:17:58.306 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+15:17:58.306 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+15:17:58.307 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+15:17:58.308 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:17:58.308 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+15:17:58.309 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+15:17:58.309 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+15:17:58.309 TRACE --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:17:58.309 DEBUG --- [http-nio-8080-exec-6] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+15:17:58.309 INFO  --- [http-nio-8080-exec-6] c.l.e.controller.BoardController : list 불러오기 성공! 
+15:18:00.472 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+15:18:00.475 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+15:18:00.478 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+15:18:00.478 TRACE --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+15:18:00.484 DEBUG --- [http-nio-8080-exec-7] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+15:18:00.486 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+15:18:00.486 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: tommy(String) 
+15:18:00.487 TRACE --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+15:18:00.487 TRACE --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+15:18:00.488 DEBUG --- [http-nio-8080-exec-7] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+15:18:00.488 INFO  --- [http-nio-8080-exec-7] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+15:18:08.981 WARN  --- [http-nio-8080-exec-9] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{bGroup}"] 
+15:19:25.459 WARN  --- [http-nio-8080-exec-3] o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{bGroup}"] 
+15:19:29.469 WARN  --- [RMI TCP Connection(57)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 
+15:19:32.930 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Starting Lcomputerspring3Application using Java 17.0.5 on Suminui-MacBookPro.local with PID 95203 (/Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3/bin/main started by suminmun in /Users/suminmun/Documents/workspace-spring-tool-suite-4-4.17.1.RELEASE/lcomputerspring3) 
+15:19:32.931 DEBUG --- [restartedMain] c.l.e.Lcomputerspring3Application : Running with Spring Boot v2.7.10, Spring v5.3.26 
+15:19:32.931 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : No active profile set, falling back to 1 default profile: "default" 
+15:19:34.104 INFO  --- [restartedMain] c.l.e.Lcomputerspring3Application : Started Lcomputerspring3Application in 1.394 seconds (JVM running for 1.773) 
+15:19:39.022 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+15:19:39.036 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+15:19:39.053 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+15:19:39.054 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+15:19:39.055 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+15:19:39.055 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+15:19:39.056 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+15:19:39.056 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+15:19:39.057 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+15:19:39.057 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+15:19:39.057 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+15:19:39.058 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+15:19:39.058 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+15:19:39.059 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+15:19:39.059 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:19:39.059 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+15:19:39.060 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+15:19:39.060 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+15:19:39.061 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:19:39.062 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+15:19:39.062 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+15:19:39.062 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+15:19:39.063 TRACE --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:19:39.063 DEBUG --- [http-nio-8080-exec-1] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+15:19:43.260 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.boardCountAll : ==>  Preparing: SELECT count(*) FROM lc_board 
+15:19:43.261 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.boardCountAll : ==> Parameters:  
+15:19:43.266 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.boardCountAll : <==    Columns: count(*) 
+15:19:43.266 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.boardCountAll : <==        Row: 100 
+15:19:43.267 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.boardCountAll : <==      Total: 1 
+15:19:43.268 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username FROM lc_board ORDER BY b_id DESC LIMIT ?,? 
+15:19:43.268 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : ==> Parameters: 0(Integer), 20(Integer) 
+15:19:43.270 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username 
+15:19:43.270 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app 
+15:19:43.271 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 278, 대망의 답글 테스트, 두구두구두구두구 배고파, 김왈, 2023-06-18 14:22:05, app 
+15:19:43.272 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 277, 왈이는 관리자!, 너희들의 글을 삭제할 권한이 있지!, 김왈, 2023-06-18 13:15:44, app 
+15:19:43.272 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 275, ddd, ddddd, 박토미, 2023-06-15 19:30:26, tommy 
+15:19:43.273 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 273, 토미의 글, 호ㅓㄱ인, 박토미, 2023-06-15 19:27:24, tommy 
+15:19:43.273 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 271, 아~ 오늘 밤엔 무슨 영화 볼까, 흠...뭐가 좋을까, 김왈, 2023-06-15 19:25:57, app 
+15:19:43.274 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 269, 아니 뭐 얼마나 더 하라고, ㅡㅡ팔천원 실화냐, 김왈, 2023-06-15 18:59:18, app 
+15:19:43.274 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 265, 김왈의 app 관리자, 이다. 수정??, 김왈, 2023-06-15 16:35:43, null 
+15:19:43.275 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 260, 토미 가입했어요, 이제 삭제할 거임/ 얘는 일반, 박토미, 2023-06-14 09:49:17, null 
+15:19:43.275 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 223, bList test, test, 김해피, 2023-06-12 23:50:34, null 
+15:19:43.276 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 221, paging, paging can do this, 김해피, 2023-06-12 22:09:20, null 
+15:19:43.276 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 220, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:19:43.277 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 219, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+15:19:43.277 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 218, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+15:19:43.278 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 217, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+15:19:43.279 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 215, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:19:43.279 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 214, gpt가 알려준 방법을 응용해보았다, 될까?, 김해피, 2023-06-12 22:06:09, null 
+15:19:43.280 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 213, 이게 맞나, 되면 좋긴 한데 너무 복잡하다고 생각해 ㅋ, 김해피, 2023-06-12 22:04:10, null 
+15:19:43.280 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 212, 작성자 나오는지 테스트, 렛츠고, ap, 2023-06-12 21:59:19, null 
+15:19:43.281 TRACE --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==        Row: 210, logger test, gogo, 김해피, 2023-06-12 22:09:20, null 
+15:19:43.281 DEBUG --- [http-nio-8080-exec-2] c.l.e.m.BoardMapper.selectBoardList : <==      Total: 20 
+15:19:43.282 INFO  --- [http-nio-8080-exec-2] c.l.e.controller.BoardController : list 불러오기 성공! 
+15:19:45.415 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.readBoard : ==>  Preparing: SELECT b_id as bId, b_title as bTitle, b_content as bContent, b_writer as bWriter, b_datetime as bDateTime, u_id as username, b_group as bGroup, b_order as bOrder, b_depth as bDepth FROM lc_board WHERE b_id = ? 
+15:19:45.417 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.readBoard : ==> Parameters: 279(Integer) 
+15:19:45.423 TRACE --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.readBoard : <==    Columns: bId, bTitle, bContent, bWriter, bDateTime, username, bGroup, bOrder, bDepth 
+15:19:45.424 TRACE --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.readBoard : <==        Row: 279, 답글 테스트#1, 6월 19일 월요일
+마라샹궈 기다리는 중, 김왈, 2023-06-19 11:43:12, app, 279, 1, 0 
+15:19:45.425 DEBUG --- [http-nio-8080-exec-3] c.l.e.mapper.BoardMapper.readBoard : <==      Total: 1 
+15:19:45.426 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.UserMapper.readAuthorities : ==>  Preparing: SELECT u_auth FROM lc_auth WHERE 1=1 AND u_id = ? 
+15:19:45.427 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.UserMapper.readAuthorities : ==> Parameters: tommy(String) 
+15:19:45.429 TRACE --- [http-nio-8080-exec-3] c.l.e.m.UserMapper.readAuthorities : <==    Columns: u_auth 
+15:19:45.429 TRACE --- [http-nio-8080-exec-3] c.l.e.m.UserMapper.readAuthorities : <==        Row: ROLE_USER 
+15:19:45.430 DEBUG --- [http-nio-8080-exec-3] c.l.e.m.UserMapper.readAuthorities : <==      Total: 1 
+15:19:45.431 INFO  --- [http-nio-8080-exec-3] c.l.e.controller.BoardController : 게시글 불러오기 성공!! 
+15:20:26.218 WARN  --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833) 

@@ -18,8 +18,11 @@
 			</sec:authorize>
 			<sec:authorize access="isAuthenticated()">
 				<a href="/logout">로그아웃</a>
+				<sec:authorize access="hasRole('ADMIN')">
+					<h2>너 관리자?</h2>
+				</sec:authorize>
 				<sec:authentication property="principal" var="principal"/>
-				<h2>${principal}</h2>
+					<h2>${principal}</h2>
 			</sec:authorize>		
 		</div>
 		
@@ -28,6 +31,7 @@
 			<a href="/user/info">내 정보</a>
 			<a href="/admin">관리자</a>
 			<a href="/tryToWrite">글쓰기</a>
+			<a href="/boardList">글 목록</a>
 		</sec:authorize>
 		</div>
 </body>

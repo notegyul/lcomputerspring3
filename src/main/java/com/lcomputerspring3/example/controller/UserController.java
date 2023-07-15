@@ -18,7 +18,7 @@ import com.lcomputerspring3.example.service.BoardService;
 import com.lcomputerspring3.example.service.UserService;
 
 @org.springframework.stereotype.Controller
-public class Controller {
+public class UserController {
 	
 	
 	//로그 https://velog.io/@backtony/Spring-%EB%A1%9C%EA%B7%B8-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0-Logback
@@ -31,7 +31,7 @@ public class Controller {
 	@RequestMapping("/")
 	public String home(Model model) {
 		
-		List<Board> list = boardservice.selectBoardList();
+		List<Board> list = boardservice.selectBoardList(pagination);
 		model.addAttribute("list",list);
 		//logger.debug("debug");
 		//logger.info("info");
@@ -41,6 +41,8 @@ public class Controller {
 	
 	@RequestMapping("/beforeSignUp")
 	public String beforeSignUp() {
+		
+		logger.info("회원가입 하러 GO!");
 		return "/signup";
 	}
 	
@@ -64,6 +66,7 @@ public class Controller {
 		//유저 권한 생성 
 		userservice.createAuthorities(user);
 				
+		logger.info("가입 완료!!");
 		return "/login";
 	}
 	

@@ -9,7 +9,7 @@ import com.lcomputerspring3.example.domain.Pagination;
 
 @Mapper
 public interface BoardMapper {
-	public List<Board> selectBoardList();
+	public List<Board> selectBoardList(Pagination pagination);
 	
 	public List<Board> selectBoardListWithPage(Pagination pagination);
 	
@@ -17,10 +17,18 @@ public interface BoardMapper {
 	
 	public void writePost(Board board);
 	
-	public Board getBoard(int bId);
+	public Board readBoard(int bId);
 	
-	public int edit(int bId);
+	public int editBoard(Board board);
 	
-	public int delete(int bId);
+	public int deleteBoard(Board board);
+	
+	public int writePostGroupUpdate(Board board);
+	
+	public void replyToBoardOrigin(Board board);
+
+	public void replyTo(Board board);
+	
+	public void updateBOrder(Board board);
 	
 }

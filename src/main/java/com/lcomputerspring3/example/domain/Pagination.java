@@ -16,6 +16,7 @@ public class Pagination {
 	int count; 		//테이블에 등록된 총 레코드 수
 	int page;		//현재 페이지 번호
 	int pageNum;		//count / page = 화면에 나타날 index 번호
+					//현재 페이지 번호를 기반으로 한 페이지에서의 첫 번째 게시물의 인덱스
 	int startPage;		//pagination의 시작(ex. 1,11,21)
 	int endPage;			//pagination의 끝(ex. 10,20,30)
 	int lastPage;		//(count/화면에표시할갯수), pagination 마지막 번호
@@ -25,7 +26,7 @@ public class Pagination {
 	
 
 	public static final int pageUnit=5; //한번에 불러올 pagination 수
-	public static final int perPage=10;	//한번에 불러올 자료(count) 수
+	public static final int perPage=20;	//한번에 불러올 자료(count) 수
 	
 	
 	

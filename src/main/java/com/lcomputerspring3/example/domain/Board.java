@@ -9,15 +9,38 @@ public class Board {
 	private String bContent;
 	private String bWriter;
 	private String bDateTime;
-	private String uName;
+	private String username;
 	
-		
-	public String getuName() {
-		return uName;
+	private int bGroup;
+	private int bOrder;
+	private int bDepth;
+	
+	
+	public int getbGroup() {
+		return bGroup;
 	}
-	public void setuName(String uName) {
-		this.uName = uName;
+	public void setbGroup(int bGroup) {
+		this.bGroup = bGroup;
 	}
+	public int getbOrder() {
+		return bOrder;
+	}
+	public void setbOrder(int bOrder) {
+		this.bOrder = bOrder;
+	}
+	public int getbDepth() {
+		return bDepth;
+	}
+	public void setbDepth(int bDepth) {
+		this.bDepth = bDepth;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	
 	public int getbId() {
 		return bId;
 	}

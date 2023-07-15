@@ -15,14 +15,11 @@ public class BoardServiceImpl implements BoardService{
 	@Autowired BoardMapper boardmapper;
 	
 	@Override
-	public List<Board> selectBoardList(){
-		return boardmapper.selectBoardList();
+	public List<Board> selectBoardList(Pagination pagination){
+		return boardmapper.selectBoardList(pagination);
 	}
 	
-	@Override
-	public List<Board> selectBoardListWithPage(Pagination pagination){
-		return boardmapper.selectBoardListWithPage(pagination);
-	}
+	
 	
 	@Override
 	public int boardCountAll() {
@@ -36,23 +33,35 @@ public class BoardServiceImpl implements BoardService{
 	
 	
 	@Override
-	public Board getBoard(int bId) {
-		return boardmapper.getBoard(bId);
+	public Board readBoard(int bId) {
+		return boardmapper.readBoard(bId);
 	}
 	
 	
 	@Override
-	public int editBoard(int bId) {
-		return 0;
+	public int editBoard(Board board) {
+		return boardmapper.editBoard(board);
 	}
 	
 	@Override 
-	public int deleteBoard(int bId) {
-		return 0;
+	public int deleteBoard(Board board) {
+		return boardmapper.deleteBoard(board);
 	}
 	
+	@Override
+	public int writePostGroupUpdate(Board board) {
+		return boardmapper.writePostGroupUpdate(board);
+	}
 	
+	@Override
+	public void replyTo(Board board) {
+		boardmapper.replyTo(board);
+	}
 	
+	@Override
+	public void updateBOrder(Board board) {
+		boardmapper.updateBOrder(board);
+	}
 	
 	
 	

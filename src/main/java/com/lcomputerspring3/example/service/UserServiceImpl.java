@@ -1,5 +1,6 @@
 package com.lcomputerspring3.example.service;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -33,6 +34,21 @@ public class UserServiceImpl implements UserService{
 	}
 	
 	@Override
+	public List<String> getUserAuth(Collection<GrantedAuthority> authorities) {
+		List<String> userAuthList = new ArrayList<>();
+		
+		for(GrantedAuthority authority : authorities ) {
+			userAuthList.add(authority.getAuthority());
+		}
+		
+		
+		return userAuthList;
+	}
+	
+	
+	
+	
+	@Override
 	public void createUser(User user) {
 		userMapper.createUser(user);
 	}
@@ -46,6 +62,9 @@ public class UserServiceImpl implements UserService{
 	public User readUser(String username) {
 		return userMapper.readUser(username);
 	}
+	
+	
+	
 	
 	
 	

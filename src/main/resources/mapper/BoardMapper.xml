@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lcomputerspring3.example.mapper.BoardMapper">
-	<select id="selectBoardList" resultType="Board" parameterType="Board">
+
+
+	<select id="selectBoardList" resultType="Board" parameterType="Pagination">
 		SELECT		b_id as bId,
 						b_title as bTitle,
 						b_content as bContent,
 						b_writer as bWriter,
-						b_datetime as bDateTime
+						b_datetime as bDateTime,
+						u_id		as username
 		FROM		lc_board
-		ORDER BY	b_datetime DESC
-	</select>
-	<!-- 페이징 처리 리스트 -->
-	<select id="selectBoardListWithPage" resultType="Board" parameterType="Pagination">
-		SELECT		b_id as bId,
-						b_title as bTitle,
-						b_content as bContent,
-						b_writer as bWriter,
-						b_datetime as bDateTime
-		FROM		lc_board
-		ORDER BY	b_datetime DESC
+		ORDER BY	b_group desc, b_order asc 
 		LIMIT		#{pageNum},#{perPage}
 	</select>
+	
+	
 	
 	<!-- 게시글 count -->
 	<select id="boardCountAll" resultType="int">
@@ -28,35 +23,104 @@
 		FROM 		lc_board
 	</select>
 	
+	
+	
 	<!-- 글 등록 -->
 	<insert id="writePost" parameterType="Board">
 		INSERT	INTO lc_board(
 				b_title,
 					b_content,
 					b_writer,
-					b_datetime
+					b_datetime,
+					u_id,
+					b_group,
+					b_order,
+					b_depth
 					
 		) VALUES (
 				#{bTitle},
 				#{bContent},
-				#{uName},
-				now()
+				#{bWriter},
+				now(),
+				#{username},
+				1,
+				1,
+				0
 		)
 					
 	</insert>
 	
-	<!-- 게시글 읽기 -->
-	<select id="getBoard" resultType="Board" parameterType="int">
+	<update id="writePostGroupUpdate" parameterType="Board">
+		UPDATE 		lc_board
+		SET			b_group = last_insert_id()
+		WHERE		b_id = last_insert_id()
+	</update>
 	
+	
+	<!-- 게시글 읽기 -->
+	<select id="readBoard" resultType="Board" parameterType="int">
+		SELECT		b_id as bId,
+						b_title as bTitle,
+						b_content as bContent,
+						b_writer as bWriter,
+						b_datetime as bDateTime,
+						u_id		as username,
+						b_group		as bGroup,
+						b_order		as bOrder,
+						b_depth		as bDepth
+		FROM		lc_board
+		WHERE		b_id = #{bId}
 	</select>
+		
 	
 	<!-- 게시글 수정 -->
-	<update id="editBoard">
-	
+	<update id="editBoard" parameterType="Board">
+		UPDATE		lc_board
+		SET			b_title = #{bTitle},
+					b_content = #{bContent}
+		WHERE		b_id = #{bId}
 	</update>
 	
 	<!-- 게시글 삭제 -->
-	<update id="deleteBoard">
+	<delete id="deleteBoard" parameterType="Board">
+		DELETE
+		FROM		lc_board
+		WHERE		b_id = #{bId}
+	</delete>
 	
+	
+	<!-- 답글-->
+	<insert id="replyTo" parameterType="Board">
+		INSERT INTO 	lc_board (
+						b_title,
+						b_content,
+						b_writer,
+						b_datetime, 
+						u_id,
+						b_group,
+						b_order,
+						b_depth
+							
+		) VALUES (
+						#{bTitle},
+						#{bContent},
+						#{bWriter},
+						now(),
+						#{username},
+						#{bGroup},
+						#{bOrder},
+						#{bDepth}
+						
+		)
+	</insert>
+	
+	<!-- 답글 작성 시 order 업데이트 -->
+	<update id="updateBOrder" parameterType="Board">
+		UPDATE		lc_board
+		  SET		b_order = b_order + 1
+		WHERE		b_group = #{bGroup}
+		  AND		b_order >= #{bOrder}
+		  AND		b_id != last_insert_id();
 	</update>
+	
 </mapper>

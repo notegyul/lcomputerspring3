@@ -16,15 +16,43 @@ public class User implements UserDetails{
 	private String password; 	//u_password
 	private String uName;		//u_name
 	private String uDateTime;	//u_datetitme
+	private String uAuth;
 	
 	//security 관련
 	private Collection<? extends GrantedAuthority> authorities;
 
 	
+	
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
 	private boolean isAccountNonExpired; 
 	private boolean isAccountNonLocked;
 	private boolean isCredentialsNonExpired;
 	private boolean isEnabled;
+	
+	
+	public boolean isAdmin() {
+		Collection<? extends GrantedAuthority> authorities = getAuthorities();
+		for(GrantedAuthority authority : authorities) {
+			if(authority.getAuthority().equals("ROLE_ADMIN"))
+				return true;
+		}
+		return false;
+	}
+	
+	
+	public String getuAuth() {
+		return uAuth;
+	}
+
+
+	public void setuAuth(String uAuth) {
+		this.uAuth = uAuth;
+	}
+
 	
 	@Override
 	public String getUsername() {
